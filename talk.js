@@ -1,14 +1,14 @@
-var request = require('request-promise');
+let request = require('request-promise');
 
 async function arraysum() {
 
 	// This variable contains the data
 	// you want to send.
-	var data = {
+	let data = {
 		array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	}
 
-	var options = {
+	let options = {
 		method: 'POST',
 
 		// http:flaskserverurl:port/route
@@ -20,7 +20,7 @@ async function arraysum() {
 		json: true
 	};
 
-	var sendrequest = await request(options)
+	let sendrequest = await request(options)
 
 		// The parsedBody contains the data
 		// sent back from the Flask server
