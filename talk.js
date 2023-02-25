@@ -3,7 +3,7 @@ var request = require('request-promise');
 async function arraysum() {
 
 	// This variable contains the data
-	// you want to send
+	// you want to send.
 	var data = {
 		array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	}
